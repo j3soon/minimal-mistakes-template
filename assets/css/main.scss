@@ -46,3 +46,41 @@ td > em > code {
 h4 {
   font-size: $type-size-5;
 }
+
+/* Enable toc sidebar scrolling */
+.sidebar__right {
+  &.sticky {
+    .toc {
+      .toc__menu {
+        overflow-y: auto;
+        scrollbar-width: thin;
+        max-height: calc(100vh - 7em);
+        &::-webkit-scrollbar {
+          width: 8px;
+        }
+        &::-webkit-scrollbar-track {
+          background: #F0F0F0;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: #CDCDCD;
+          border: 1px solid #F0F0F0;
+        }
+      }
+    }
+  }
+}
+
+/* Beautify sidebar */
+.sidebar {
+  scrollbar-width: thin;
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #F0F0F0;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #CDCDCD;
+    border: 1px solid #F0F0F0;
+  }
+}
