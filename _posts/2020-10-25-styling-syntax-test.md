@@ -7,7 +7,7 @@ In this document, we'll showcase some commonly used features that Jekyll can ach
 
 The feature includes: markdown, mathjax, latex, yaml, css, html, liquid.
 
-[mm]: https://github.com/j3soon/minimal-mistakes-template
+[mm]: https://github.com/abstractionrevealed/minimal-mistakes-template
 
 <!--more-->
 
