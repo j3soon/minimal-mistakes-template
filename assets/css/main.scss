@@ -84,3 +84,11 @@ h4 {
     border: 1px solid #F0F0F0;
   }
 }
+
+/* Smaller font size */
+h1, h2, h3, h4, h5 {
+  margin: 0 0 0.5em;
+}
+.page__content {
+  font-size: 18px;
+}
