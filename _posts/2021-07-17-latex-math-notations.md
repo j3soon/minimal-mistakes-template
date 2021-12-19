@@ -1,6 +1,6 @@
 ---
 title: "LaTex Math Notations"
-last_modified_at: 2020-07-17
+last_modified_at: 2021-12-19T15:39:14
 dlbook_notation: true
 ---
 
