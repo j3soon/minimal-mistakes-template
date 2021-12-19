@@ -7,7 +7,7 @@ In this document, we'll showcase some commonly used features that Jekyll can ach
 
 The feature includes: markdown, mathjax, latex, yaml, css, html, liquid.
 
-[mm]: https://github.com/abstractionrevealed/minimal-mistakes-template
+[mm]: https://github.com/j3soon/minimal-mistakes-template
 
 <!--more-->
 
@@ -193,20 +193,20 @@ int a = 0; // js code
 
 ## MathJax & LaTex
 
-Inline math $f(x)=x^2$
+Inline math $$f(x)=x^2$$
 
 ```md
-Inline math $f(x)=x^2$
+Inline math $$f(x)=x^2$$
 ```
 
 <hr>
 
 Long math
 
-$\max\limits_\theta L_{\theta_0}(\theta)$, subject to $D_{KL}^{\rho_{\theta_0}}(\theta_0,\theta)\le\delta$, where $D_{KL}^\rho(\theta_1,\theta_2)=\mathbb{E}\_{s\sim\rho}[D\_{KL}(\pi\_{\theta_1}(\cdot\vert s)\mid\mid\pi\_{\theta_2}(\cdot\vert s))]$
+$$\max\limits_\theta L_{\theta_0}(\theta)$$, subject to $$D_{KL}^{\rho_{\theta_0}}(\theta_0,\theta)\le\delta$$, where $$D_{KL}^\rho(\theta_1,\theta_2)=\mathbb{E}_{s\sim\rho}[D_{KL}(\pi_{\theta_1}(\cdot\vert s)\mid\mid\pi_{\theta_2}(\cdot\vert s))]$$
 
 ```latex
-$\max\limits_\theta L_{\theta_0}(\theta)$, subject to $D_{KL}^{\rho_{\theta_0}}(\theta_0,\theta)\le\delta$, where $D_{KL}^\rho(\theta_1,\theta_2)=\mathbb{E}\_{s\sim\rho}[D\_{KL}(\pi\_{\theta_1}(\cdot\vert s)\mid\mid\pi\_{\theta_2}(\cdot\vert s))]$
+$$\max\limits_\theta L_{\theta_0}(\theta)$$, subject to $$D_{KL}^{\rho_{\theta_0}}(\theta_0,\theta)\le\delta$$, where $$D_{KL}^\rho(\theta_1,\theta_2)=\mathbb{E}_{s\sim\rho}[D_{KL}(\pi_{\theta_1}(\cdot\vert s)\mid\mid\pi_{\theta_2}(\cdot\vert s))]$$
 ```
 
 <hr>
@@ -223,7 +223,7 @@ $$f(x)=x^2$$
 
 |Symbols|Using|Latex|
 |:-:|:-:|:-:|
-|$✔$|$\color{green} ✔$|$\color{red} ✘$|
+|$$✔$$|$$\color{green} ✔$$|$$\color{red} ✘$$|
 
 ```latex
 |Symbols|Using|Latex|
@@ -233,24 +233,18 @@ $$f(x)=x^2$$
 
 <hr>
 
-$$\begin{multline}
-\shoveleft
-\begin{aligned}
+$$\begin{aligned}
 G_t&=R_{t+1}+\gamma R_{t+2}+\gamma^2 R_{t+3}+\gamma^3 R_{t+4}+...\\
 &=R_{t+1}+\gamma(R_{t+2}+\gamma R_{t+3}+\gamma^2 R_{t+4})+...\\
 &=R_{t+1}+\gamma G_{t+1}\\
-\end{aligned}
-\end{multline}$$
+\end{aligned}$$
 
 ```latex
-$$\begin{multline}
-\shoveleft
-\begin{aligned}
+$$\begin{aligned}
 G_t&=R_{t+1}+\gamma R_{t+2}+\gamma^2 R_{t+3}+\gamma^3 R_{t+4}+...\\
 &=R_{t+1}+\gamma(R_{t+2}+\gamma R_{t+3}+\gamma^2 R_{t+4})+...\\
 &=R_{t+1}+\gamma G_{t+1}\\
-\end{aligned}
-\end{multline}$$
+\end{aligned}$$
 ```
 
 <hr>
@@ -265,6 +259,8 @@ Broken equation $61_{10}$, $111101_2$, $3D_{16}$
 Fixed equation $61\_{10}$, $111101\_2$, $3D\_{16}$
 ```
 
+> Note: The fixed equation only works when the [single dollar sign is enabled](https://docs.mathjax.org/en/latest/input/tex/delimiters.html).
+
 <hr>
 
 ## YAML
@@ -273,8 +269,8 @@ Should be at the front of every markdown file.
 
 ```yaml
 ---
-title: "Markdown on Jekyll"
-tags: markdown jekyll mathjax latex
+title: "Styling Syntax Test"
+tags: jekyll mathjax latex
 last_modified_at: 2020-02-22
 ---
 ```

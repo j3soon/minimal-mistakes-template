@@ -1,15 +1,14 @@
-# [Minimal Mistakes Template](https://github.com/abstractionrevealed/minimal-mistakes-template/)
+# [Minimal Mistakes Template](https://github.com/j3soon/minimal-mistakes-template/)
 
 A minimum Jekyll blog template with some customization based on the [Minimal Mistakes Theme](https://mmistakes.github.io/minimal-mistakes/).
 
-- [Preview](https://abstractionrevealed.github.io/minimal-mistakes-template/styling-syntax-test/)
-- [Modification History](https://github.com/abstractionrevealed/minimal-mistakes-template/commits/master)
+**[Click here to preview!](https://j3soon.github.io/minimal-mistakes-template/styling-syntax-test/)**
 
-For a full tutorial on how this template is created and how to further customize your site, please refer to [this blog post](https://intuitive-theory.com/setting-up-a-free-multi-purpose-website-using-jekyll-and-gitHub-pages/) and [the documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
+To further customize your site, please refer to [the documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
 
 ## Run the template locally
 
-Follow the [installation guide of Jekyll](https://jekyllrb.com/docs/installation/).
+First, follow the [installation guide of Jekyll](https://jekyllrb.com/docs/installation/). Then, follow the subsection that corresponds to your operating system.
 
 ### Linux & MacOS
 
@@ -30,7 +29,7 @@ scripts/set_env_ghpages.sh
 Full local preview commands:
 
 ```
-git clone https://github.com/abstractionrevealed/minimal-mistakes-template.git
+git clone https://github.com/j3soon/minimal-mistakes-template.git
 cd minimal-mistakes-template
 scripts/preview.sh
 # If the local preview is correct, press Ctrl+C once.
@@ -56,9 +55,15 @@ scripts\set_env_ghpages.bat
 Full local preview commands:
 
 ```
-git clone https://github.com/abstractionrevealed/minimal-mistakes-template.git
+git clone https://github.com/j3soon/minimal-mistakes-template.git
 cd minimal-mistakes-template
 scripts\preview.bat
 # If the local preview is correct, press Ctrl+C multiple times.
 # Stage, Commit, and Push the modifications to GitHub to update GitHub Pages
 ```
+
+## Dependencies
+
+- [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes/releases) specified in [Gemfile](Gemfile) with [MIT License](https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE).
+- [MathJax](https://github.com/mathjax/MathJax/releases) specified in [_includes/scripts.html](_includes/scripts.html) with [Apache-2.0 License](https://github.com/mathjax/MathJax/blob/master/LICENSE).
+- [dlbook_notation](https://github.com/goodfeli/dlbook_notation) in [_includes/dl-book-latex.html](_includes/scripts.html) with some customization for Jekyll.

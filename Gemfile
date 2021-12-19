@@ -36,3 +36,6 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # Not automatically installed for Ruby 3.x
 gem "webrick"
 
+# eventmachine error (https://stackoverflow.com/a/65547010)
+gem 'eventmachine', '1.2.7', git: 'https://github.com/eventmachine/eventmachine.git', tag: 'v1.2.7'
+

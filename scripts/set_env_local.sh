@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # _config.yml
 # Uncomment both
 sed -i -e 's/^# theme: "minimal-mistakes-jekyll"/theme: "minimal-mistakes-jekyll"/g' "${BASH_SOURCE%/*}/../_config.yml"

@@ -1,7 +1,7 @@
 ---
 title: "LaTex Math Notations"
 last_modified_at: 2020-07-17
-dl_book_latex: true
+dlbook_notation: true
 ---
 
 This document provides the notation used in the [Deep Learning Book](https://www.deeplearningbook.org/), and is highly based on this [LaTex file](https://github.com/goodfeli/dlbook_notation/blob/master/notation.tex). You can refer to the source of this post for the latex commands.
@@ -111,7 +111,7 @@ for all valid values of $$i$$, $$j$$ and $$k$$.
 For using these commands, your post should have the following yaml config:
 
 ```yaml
-dl_book_latex: true
+dlbook_notation: true
 ```
 
-Due to the compatibility issue between Kramdown and Mathjax, You should not use the condition symbol (`|`) directly (kramdown table synyax), use the escaped text (`\vert`) instead. Furthermore, you will want to use double dollar sign (`$$...$$`) for most of your math notations, since single dollar sign (`$...$`) may have some conflict with markdown. (e.g., underscore)
+Due to the compatibility issue between Kramdown and Mathjax, You should not use the condition symbol (`|`) directly (kramdown table synyax), use the escaped text (`\vert`) instead. Furthermore, you will want to use double dollar sign (`$$...$$`) for most of your math notations, since single dollar sign (`$...$`) may have some conflict with kramdown. (e.g., underscore need to be escaped with `\_`)
