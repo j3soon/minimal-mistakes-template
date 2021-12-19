@@ -1,6 +1,6 @@
 ---
 title: "Styling Syntax Test"
-last_modified_at: 2020-10-25
+last_modified_at: 2021-12-19T06:53:11
 ---
 
 In this document, we'll showcase some commonly used features that Jekyll can achieve in a generated website. All of them can work out-of-the-box if you forked [our Minimal Mistakes Template][mm].
@@ -271,7 +271,7 @@ Should be at the front of every markdown file.
 ---
 title: "Styling Syntax Test"
 tags: jekyll mathjax latex
-last_modified_at: 2020-02-22
+last_modified_at: 2021-12-19T06:53:11
 ---
 ```
 
@@ -452,3 +452,7 @@ Content
 {{page.id}}
 ```
 {% endraw %}
+
+## Final Notes
+
+Due to the compatibility issue between Kramdown and Mathjax, You should not use the condition symbol (`|`) directly (kramdown table synyax), use the escaped text (`\vert`) instead. Furthermore, you will want to use double dollar sign (`$$...$$`) for most of your math notations, since single dollar sign (`$...$`) may have some conflict with kramdown. (e.g., underscore need to be escaped with `\_`)
