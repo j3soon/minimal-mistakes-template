@@ -108,10 +108,12 @@ for all valid values of $$i$$, $$j$$ and $$k$$.
 
 ## Final Notes
 
-For using these commands, your post should have the following yaml config:
+For using these commands, your post should have the following yaml config in the beginning of your markdown file:
 
 ```yaml
+---
 dlbook_notation: true
+---
 ```
 
 Due to the compatibility issue between Kramdown and Mathjax, You should not use the condition symbol (`|`) directly (kramdown table synyax), use the escaped text (`\vert`) instead. Furthermore, you will want to use double dollar sign (`$$...$$`) for most of your math notations, since single dollar sign (`$...$`) may have some conflict with kramdown. (e.g., underscore need to be escaped with `\_`)

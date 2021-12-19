@@ -36,6 +36,14 @@ scripts/preview.sh
 # Stage, Commit, and Push the modifications to GitHub to update GitHub Pages
 ```
 
+<!--
+(Optional) Install git-hooks with:
+
+```sh
+scripts/install.sh
+```
+-->
+
 ### Windows
 
 (Tested on Windows 10)
@@ -61,6 +69,16 @@ scripts\preview.bat
 # If the local preview is correct, press Ctrl+C multiple times.
 # Stage, Commit, and Push the modifications to GitHub to update GitHub Pages
 ```
+
+<!--
+(Optional) Install git-hooks with:
+
+```sh
+scripts\install.bat
+```
+
+Note: requires [pwsh](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows)
+-->
 
 ## Dependencies
 
